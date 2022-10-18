@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<<<<<<< HEAD
+    <meta name="viewport" content="width=#, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="login" style="display: none;" id="registerForm">
+      <form name='form-login'>
+  
+          <h1>REGISTER</h1>
+  
+          <label for="name">Email</label>
+          <input type="email" id="name" placeholder="Username" required>
+  
+          <label for="pw">Password</label>
+          <input type="password"
+                 id= "pw"
+                 placeholder="Password" required>
+  
+          <ul class="helper-text">
+              <li class="length">Must be at least 8 characters long.</li>
+              <li class="lowercase">Must contain a lowercase letter.</li>
+              <li class="uppercase">Must contain an uppercase letter.</li>
+              <li class="special">Must contain a number or special character.</li>
+          </ul>
+          <p onclick="changeFormToSignIn()">Already have an account?</p>
+          <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+  
+      </form>
+  </div>
+  
+  <div class="login" id="loginForm" style="display: block;" >
+      <form name='form-login'>
+  
+          <h1>SIGN IN</h1>
+  
+          <label for="userName">Email</label>
+          <input type="email" id="userName" placeholder="Username" required>
+  
+          <label for="userPw">Password</label>
+          <input type="password" id= "userPw" placeholder="Password" required>
+  
+          <div id="noAccount">
+            <p onclick="changeForm()">Haven't got an account? Create one!</p>
+          </div>
+
+          <div id="remember">
+              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                     style="display: inline-block;">
+              <label>Remember me</label>
+          </div>
+  
+          <input id= "login_btn" type="submit" value="Login" onclick="check()">
+  
+      </form>
+  </div>
+
+  <script>
+      function changeForm(){
+        let loginForm = document.getElementById('loginForm').style.display = "none";
+        let registerForm = document.getElementById('registerForm').style.display ="block";
+      }
+
+      function changeFormToSignIn(){
+        let registerForm = document.getElementById('registerForm').style.display = "none";
+        let loginForm = document.getElementById('loginForm').style.display ="block";
+      }
+  </script>
+  
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <!-- Google Font: Quick Sand -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome (https://fontawesome.com) for basic icons; source: https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Left content -->
+    <div class="leftContent">
+      <h1 class="title">To Do List</h1>
+      <img class="leftimg" src="img/leftimg.png" alt="logoimg" />
+    </div>
+
+    <!-- main content -->
+    <div class="mainContent">
+      <!-- Form -->
+
+      <div class="form">
+        <form>
+          <input
+            onChange="handleChange(this.value)"
+            class="todo-input"
+            type="text"
+            placeholder="Add a task."
+          />
+          <button class="todo-btn" type="submit">Add Task</button>
+        </form>
+      </div>
+
+      <!-- Order lists -->
+
+      <div class="toDoList-container">
+        <ul class="todo-list">
+          <!-- (Basic Format) -->
+          <!-- <div class="todo">
+            items added to this list:
+            <li>Drink more water every Day!</li>
+            <button>delete</button>
+            <button>check</button>
+          </div> -->
+        </ul>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+>>>>>>> 82e90b02c06b93bf290d37f10ce9e47e5be8fc97
+  </body>
+</html>
