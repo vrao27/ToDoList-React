@@ -8,7 +8,7 @@ function TodoList() {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-    // this is defining the new todos using array with spread to code in the other todos
+    // this is defining the new todos using array with spread operator to code in the other todos
     const newTodos = [todo, ...todos];
 
     setTodos(newTodos);
